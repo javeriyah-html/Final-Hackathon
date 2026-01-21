@@ -26,11 +26,72 @@
             }
         }
 
-        @media(max-width:1015px){
-           .development{
-            display: none !important;
-           } 
+        @media (min-width:992px){
+   .relative{
+    position: relative;
+   }
+
+   .isolate{
+    position: absolute;
+    top: -300px;
+    right: 20px;
+    border-radius: 20px;
+   }
+}
+
+        @media(max-width:490px){
+            .btn{
+                width: auto !important;
+            }
+
+            .heading{
+                font-weight: 100;
+            }
         }
+ 
+        @media(max-width:420px){
+            .heading{
+                font-size: large !important;
+            }
+        }
+
+        @media(max-width:335px){
+            .heading{
+                font-size: medium !important;
+            }
+        }
+
+        @media(max-width:320px){
+            .btn{
+                width: 80px !important;
+            }
+
+            .btn2{
+                width: auto !important;
+                margin: auto !important;
+            }
+
+            
+        }
+         @media(max-width:955px){
+        .maincard1, .maincard2, .cards{
+           flex-wrap: wrap !important;
+        }
+
+         }
+
+         @media(max-width:645px){
+            .newbtn{
+                width: auto !important;
+            }
+         }
+
+         @media(max-width:300px){
+            .backgroundimg{
+                display: none !important;
+            }
+         }
+
     </style>
 </head>
 
@@ -40,7 +101,7 @@
 
     <nav class="navbar navbar-expand-lg" style="background-color: rgb(236, 226, 226); height: 90px;">
         <div class="container-xxl">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand px-3" href="#"><img src="./imgs/logo.png" alt="">Zarrin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -89,35 +150,31 @@
     <!-- future section end -->
 
     <!-- man section start -->
-    <div class="main container-xxl">
-        <div class="main py-5 container-xxl w-100%" style="position: relative;">
+    <div class="container-xl backgroundimg py-5">
             <img src="./imgs/man.png" alt="" class="img-fluid">
 
 
-            <div class="development w-75 border rounded px-3 py-3"
-                style="position: absolute; margin-top: -250px; margin-left: 245px; background-color: white;">
-                <div class="content">
-                    <h6>DEVELOPMENT</h6>
+            <div class="container-xl relative my-5">
+                <div class="container-lg w-75 my-5 isolate py-3 border-white" style="background-color: white;">
+                    <h6>DEVELOPMENT <span>16 march 2016</span></h6>
                     <h1>How to make a Game look more attractive with New VR & AI Technology</h1>
                     <h6>Google has been investing in AI for many years and bringing its benefits to individuals,
                         businesses and communities. Whether it’s publishing state-of-the-art research, building helpful
                         products or developing tools and resources that enable others, we’re committed to making AI
                         accessible to everyone.</h6>
 
-                    <button type="button" class="btn my-3" style="background-color: white; width: 150px; border: 1px solid black;">Read
-                        more</button>
+                    <button type="button" class="btn my-3" style="background-color: white; width: 150px; border: 1px solid black;">Read more</button>
                 </div>
             </div>
-        </div>
     </div>
     <!-- man section end -->
     
     <!-- recent section start -->
 
-    <div class="recent container-lg-xxl mx-5 py-5">
+    <div class="container-xxl justify-content-evenly ">
         <div class="main2 d-flex">
-            <h1>Our Recent Post</h1>
-            <button type="button" class="btn my-3 ms-auto" style="background-color: rgb(185, 17, 185); width: 150px; border: 1px solid white; color: white;">View all</button>
+            <h4 style="font-weight: bold;" class="heading w-50">Our Recent Post</h4>
+            <button type="button" class="btn  my-3 ms-auto" style="background-color: rgb(185, 17, 185); width: 150px; border: 1px solid white; color: white;">View all</button>
         </div>
 
         <div class="hero d-flex gap-5">
@@ -126,17 +183,177 @@
         </div>
 
         <div class="content2 w-50 py-5">
-                    <h6>DEVELOPMENT</h6>
-                    <h1>How to make a Game look more attractive with New VR & AI Technology</h1>
-                    <h6>Google has been investing in AI for many years and bringing its benefits to individuals,
-                        businesses and communities. Whether it’s publishing state-of-the-art research, building helpful
-                        products or developing tools and resources that enable others, we’re committed to making AI
-                        accessible to everyone.</h6>
+            <h6>DEVELOPMENT</h6>
+            <h1>How to make a Game look more attractive with New VR & AI Technology</h1>
+            <h6>Google has been investing in AI for many years and bringing its benefits to individuals,
+             businesses and communities. Whether it’s publishing state-of-the-art research, building helpful
+             products or developing tools and resources that enable others, we’re committed to making AI
+             accessible to everyone.</h6>
 
-                    <button type="button" class="btn my-3" style="background-color: white; width: 150px; border: 1px solid black;">Read
-                        more</button>
+            <button type="button" class="btn btn2 my-3" style="background-color: white; width: 150px; border: 1px solid black;">Read more</button>
         </div>
+        </div>
+
+
+            <div class="cards d-flex py-5 gap-5 justify-content-center">
+            <div class="card" style="width: 18rem; ">
+  <img src="./imgs/rules.jpg" style="height: 200px;" class="card-img-top" alt="rules">
+  <div class="card-body">
+    <p>Travel</p>
+    <h5 class="card-title">8 Rules of Travelling In Sea You Need To Know</h5>
+    <p class="card-text">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs</p>
+
+    <a href="#" class="">Read more...</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="./imgs/portfolio.jpg"  class="card-img-top" alt="...">
+  <div class="card-body">
+    <p>DEVELOPMENT</p>
+    <h5 class="card-title">How to build strong portfolio and get a Job in UI/UX</h5>
+    <p class="card-text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from</p>
+    <a href="#" class="">Read more...</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="./imgs/football.jpg" style="height: 200px;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p>Sports</p>
+    <h5 class="card-title">How to Be a Professional Footballer in 2023</h5>
+    <p class="card-text">Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive</p>
+
+    <a href="#" class="">Read more</a>
+  </div>
+</div>
     </div>
+    <!-- recent section end -->
+
+    <!-- popular post start -->
+      <div class="cards2 container-xxl py-5">
+        <div class="hero2 d-flex ">
+            <h5>Popular Post</h5>
+            <button type="button" class="btn my-3 ms-auto" style="background-color: rgb(185, 17, 185); width: 150px; border: 1px solid white; color: white;">View all</button>
+        </div>
+
+
+        <div class="maincard1 d-flex justify-content-evenly ">
+
+            <div class="card " style="width: 18rem;">
+  <img src="./imgs/train.jpg" class="card-img-top" alt="train" style="height: 200px;">
+  <div class="card-body">
+    <p>Travel <span>13 March 2023</span></p>
+    <h5 class="card-title">Train Or Bus Journey?Which one suits?</h5>
+    <p class="card-text">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person </p>
+    <a href="#" class="">Read More...</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="./imgs/website.jpg" class="card-img-top" alt="webiste" style="height: 200px;">
+  <div class="card-body">
+    <p>DEVELOPMENT <span>11March 2023</span></p>
+    <h5 class="card-title">Best Website to research for your next project</h5>
+    <p class="card-text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs</p>
+    <a href="#" class="">Read More...</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="./imgs/dancer.jpg" class="card-img-top" alt="dancer" style="height: 200px;">
+  <div class="card-body">
+    <p>Sports<span>10 March 2023</span></p>
+    <h5 class="card-title">How to Be a Dancer in 2023 with proper skills?</h5>
+    <p class="card-text">Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive</p>
+    <a href="#" class="">Read More...</a>
+  </div>
+</div>
+
+        </div>
+
+
+        <div class="maincard2 d-flex justify-content-evenly py-3">
+            <div class="card" style="width: 18rem;">
+  <img src="./imgs/singer.png" class="card-img-top" alt="singer">
+  <div class="card-body">
+    <p>Travel<span>13 March 2023</span></p>
+    <h5 class="card-title">Who is the best singer on chart?Know him?</h5>
+    <p class="card-text">chart by Billboard which ranks the all-time greatest artists based on their performance on the weekly Billboard Hot 100 and</p>
+    <a href="#" class="">Read More...</a>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+  <img src="./imgs/business.png" class="card-img-top" alt="business">
+  <div class="card-body">
+    <p>DEVELOPMENT<span>11March 2023</span></p>
+    <h5 class="card-title">How to start export import business from home?</h5>
+    <p class="card-text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs</p>
+    <a href="#" class="">Read More...</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="./imgs/chocolate.png" class="card-img-top" alt="chocolate">
+  <div class="card-body">
+    <p>Sports<span>10 March 2023</span></p>
+    <h5 class="card-title">Make some drinks with chocolates chocolates and milk</h5>
+    <p class="card-text">Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive</p>
+    <a href="#" class="">Read More...</a>
+  </div>
+</div>
+        </div>
+        </div>
+     </div>
+
+     <!-- popular post end -->
+
+
+     <!-- stories setion start -->
+
+     <div class="container-xxl py-5">
+        <div class="box text-center py-3" style="background-color: rgb(185, 17, 185); color: white;">
+            <h1>Get our stories delivered From us to your inbox weekly.</h1>
+
+            <form class=" newbtn d-flex justify-content-center py-5" role="search">
+        <input class="form-control me-2" type="search" placeholder="Your Email" aria-label="Search" style="max-width: 20%;">
+        <button class="btn btn2 " style="border: 1px solid white; color: white;" type="submit">Get Started</button>
+      </form>
+
+      <p>Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a reponse the following day.</p>
+        </div>
+
+
+
+        <footer class="container-lg mx-auto text-center border-bottom border-black py-4">
+  <span><img src="./imgs/logo.png" alt=""><h4>Zarrin</h4></span>
+  <div class="my-5">
+   <span class="mx-2">Home</span>
+   <span class="mx-2">About</span>
+   <span class="mx-2">Blog</span>
+   <span class="mx-2">Contact Us</span>
+
+   <div class="container-lg text-center mx-auto my-3">
+    <img src="./imgs/Dribbble.png" alt="">
+    <img src="./imgs/Behance.png" alt="">
+    <img src="./imgs/Instagram.png" alt="">
+    <img src="./imgs/Twitter.png" alt="">
+   </div>
+  </div>
+
+</footer>
+
+<div class="container-lg text-center mx-auto my-5">
+  <p>Copyright Ideapeel Inc © 2023. All Right Reserved </p>
+</div>
 
 
 
