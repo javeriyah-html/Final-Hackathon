@@ -1,24 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- bootstrap css link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!-- custom style sheet link -->
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- custom style sheet link -->
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        @media(max-width:1020px) {
+            .hero{
+                flex-direction: column !important;
+                width: 100% !important;
+            }
+        }
+
+        @media(max-width:1015px){
+           .development{
+            display: none !important;
+           } 
+        }
+    </style>
 </head>
+
 <body>
-    <h1>hello world</h1>
-    <h1>hi world</h1>
+
+    <!-- header start -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(236, 226, 226); height: 90px;">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto gap-5 fs-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: purple;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <img src="./imgs/icon.png" alt="" class="mx-3">
+                <button class="btn btn-outline-success " type="submit"
+                    style="width: 150px; background-color: rgb(185, 17, 185); color: white;">Contact us</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header end -->
+
+    <!-- future section start -->
+
+    <div class="future d-lg-flex " style="background-color: rgb(185, 17, 185); height:auto ;">
+
+        <div class="container px-5 py-5 ">
+            <div class="d-lg-flex align-items-start" style="color: white;">
+                <div class="" style="width: 50%;">
+                    <p>Featured Post</p>
+                    <h1 class="my-3 fw-bolder">How AI will Change the Future</h1>
+                    <p class="my-3">The future of AI will see home robots having enhanced intelligence, increased
+                        capabilities, and becoming more personal and possibly cute. For example, home robots will
+                        overcome navigation, direction</p>
+                    <button type="button" class="btn my-3" style="background-color: white; width: 150px;">Read
+                        more</button>
+                </div>
+                <div class="ai-image img-fluid " style="width: 50%;">
+                    <img src="./imgs/AI.png" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- future section end -->
+
+    <!-- man section start -->
+    <div class="main container-xxl">
+        <div class="main py-5 container-xxl w-100%" style="position: relative;">
+            <img src="./imgs/man.png" alt="" class="img-fluid">
+
+
+            <div class="development w-75 border rounded px-3 py-3"
+                style="position: absolute; margin-top: -250px; margin-left: 245px; background-color: white;">
+                <div class="content">
+                    <h6>DEVELOPMENT</h6>
+                    <h1>How to make a Game look more attractive with New VR & AI Technology</h1>
+                    <h6>Google has been investing in AI for many years and bringing its benefits to individuals,
+                        businesses and communities. Whether it’s publishing state-of-the-art research, building helpful
+                        products or developing tools and resources that enable others, we’re committed to making AI
+                        accessible to everyone.</h6>
+
+                    <button type="button" class="btn my-3" style="background-color: white; width: 150px; border: 1px solid black;">Read
+                        more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- man section end -->
+    
+    <!-- recent section start -->
+
+    <div class="recent container-lg-xxl mx-5 py-5">
+        <div class="main2 d-flex">
+            <h1>Our Recent Post</h1>
+            <button type="button" class="btn my-3 ms-auto" style="background-color: rgb(185, 17, 185); width: 150px; border: 1px solid white; color: white;">View all</button>
+        </div>
+
+        <div class="hero d-flex gap-5">
+            <div class="man2 w-50">
+            <img src="./imgs/recent.jpg" alt="" class="img-fluid" style="width: auto;">
+        </div>
+
+        <div class="content2 w-50 py-5">
+                    <h6>DEVELOPMENT</h6>
+                    <h1>How to make a Game look more attractive with New VR & AI Technology</h1>
+                    <h6>Google has been investing in AI for many years and bringing its benefits to individuals,
+                        businesses and communities. Whether it’s publishing state-of-the-art research, building helpful
+                        products or developing tools and resources that enable others, we’re committed to making AI
+                        accessible to everyone.</h6>
+
+                    <button type="button" class="btn my-3" style="background-color: white; width: 150px; border: 1px solid black;">Read
+                        more</button>
+        </div>
+    </div>
 
 
 
     <!-- bootstrap javascript link -->
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
